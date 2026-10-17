@@ -1,20 +1,27 @@
-# RebootReady — Offline Recovery Assistant
+# RebootReady — Windows Recovery Preparation
 
-RebootReady is a Windows desktop prototype that helps users prepare for Windows troubleshooting and recovery.
+RebootReady is an early-stage concept for helping everyday Windows users prepare for common recovery situations before something goes wrong.
 
-## Prototype features
-- Local recovery guidance and a readiness checklist that saves progress.
-- Basic Windows and device information.
-- Optional export of installed third-party driver packages using Windows PnPUtil.
-- Local diagnostic logging and support-bundle export.
-- PowerShell scripts for launch-stability checks and mock-only QA scenarios.
+## Try the interactive prototype
 
-## Build
-The app uses WPF and .NET 8. To build it, use Windows 10/11 with the .NET 8 SDK or Visual Studio 2022 with the .NET desktop development workload.
+Open [RebootReady HTML prototype](prototype/RebootReady_Professional.html) in this repository. It includes a sample device profile, user-controlled readiness checklist, official support links, and a recovery guide.
 
-**This repository currently contains the project overview, not the complete application source package.** The v0.4.0 source ZIP still needs to be uploaded to this repository.
+**Demo boundary:** the HTML prototype uses sample data only. It does not inspect your computer, download or install drivers, repair Windows, or create recovery media.
+
+## What's in this repository
+
+- `prototype/RebootReady_Professional.html` — interactive browser-based concept prototype
+- `REBOOTREADY_PROJECT.md` — project overview and concept details
+- `LICENSE` — repository license
+
+## Desktop source package status
+
+The separate v0.4.0 WPF/.NET 8 desktop source archive is **not currently included in this repository**. The HTML prototype is separate from that desktop source package.
 
 ## Safety and limitations
-This is an early prototype, not a production Windows installer or recovery tool. It does not automatically reinstall or repair Windows, restore drivers, or create bootable recovery USB media. It is not a compiled executable and has not been verified on Windows in this environment. Test recovery-related changes in a disposable virtual machine first.
 
-See [RebootReady project details](REBOOTREADY_PROJECT.md) for more information.
+This is an early prototype, not a production Windows recovery utility. It does not automatically reinstall or repair Windows, restore drivers, or create bootable recovery USB media. Do not rely on it as your only recovery plan. Back up important files to a separate location and verify official Microsoft or laptop-manufacturer instructions before attempting recovery actions.
+
+## Build status
+
+The HTML prototype can be opened in a browser. The separate WPF desktop app has not been compiled or validated on Windows in this environment.
